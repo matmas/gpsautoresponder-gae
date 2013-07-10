@@ -1,0 +1,43 @@
+{%- extends "templates/page.html" -%}
+
+{%- block body -%}
+    <div class="page-header">
+        <img src="/static/logo96x96.png" width="96" height="96" alt="">
+        <h1>GPS Auto-Responder</h1>
+    </div>
+    
+    <p class="well lead">Share your phone's location. Without the feeling of being spied on.</p>
+    
+    <h2>How does it work?</h2>
+    <p>
+        This app creates a unique link to find your phone from any web browser. The app will notify you each time, when the link is used by the person you shared the link with. This way you get the sense of being <em>cared for</em> instead of feeling like being <em>spied on</em>. Additionaly, the service itself does not keep any location data about its users and discards them shortly after displaying to the user.
+    </p>
+    
+    <h2>Use cases</h2>
+    <ul>
+    
+        <li>Provide link to your family members to permit them to see where you are. You will be notified when they use it.
+        <li>Lost your phone? Find it using the previously created link.</li>
+    </ul>
+
+    <h2>Highlights</h2>
+    <ul>
+        <li>Free service</li>
+        <li>No registration required.</li>
+        <li>Extremely battery-efficient (the app is <em>not</em> running in background. It runs only when the location is being displayed to the user)</li>
+    </ul>
+    
+    <hr><!--.................................................................-->
+    
+    <a href="https://play.google.com/store/apps/details?id=net.matmas.gpsautoresponder">
+        <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+    </a>
+    
+    <hr><!--.................................................................-->
+    <div class="muted">
+        
+        <p>Contact: gpsa<a href="http://www.google.com/recaptcha/mailhide/d?k=012z9YNgyJWtcEkIAB0gQAmg==&amp;c=dXU3eAZfWqfPMOLfIyXvxHJlkQfBkaBmTnEMLGHESqA_UIvmm2kYBaj5HocuqEoD" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\075012z9YNgyJWtcEkIAB0gQAmg\75\75\46c\75dXU3eAZfWqfPMOLfIyXvxHJlkQfBkaBmTnEMLGHESqA_UIvmm2kYBaj5HocuqEoD', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@gpsautoresponder.com</p>
+        
+        <p><a href="/privacy-policy">Privacy policy</a></p>
+    </div>
+{%- endblock -%}

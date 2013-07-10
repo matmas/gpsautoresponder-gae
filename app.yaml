@@ -1,0 +1,21 @@
+application: gpsautoresponder
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+
+handlers:
+- url: /static/
+  static_dir: static
+
+- url: /robots.txt
+  static_files: static/robots.txt
+  upload: static/robots.txt
+
+- url: /.* # last catch-all
+  script: main.app
+
+libraries:
+- name: jinja2
+  version: latest
